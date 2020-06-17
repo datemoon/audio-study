@@ -708,7 +708,7 @@ opus_int64 AudioOutput(float *pcm, int channels, int frame_size, FILE *fout, Spe
 
    		   if(*out_pcm_space > *offset + real_len)
 		   {
-			   memcpy(*out_pcm + *offset, output, real_len);
+			   memcpy(*out_pcm + *offset, real_out, real_len);
 		   }
 		   else
 		   {
